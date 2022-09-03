@@ -6,24 +6,24 @@ import React, { useState } from "react";
 export default function Navbar() {
 
     return (
-        <div class="flex">
+        <div class="flex justify-between m-6">
 
-            <div class=" mb-44">
+            <div>
                 <span>
                     LOGO
                 </span>
-                <span class="text-2xl font-semibold">
+                <span class="text-2xl font-semibold mx-6">
                     PhoenixGuildDao
                 </span>
             </div>
-            <div  >
-                <button>
+            <div class="flex">
+                <button class="text-white mx-6 text-2xl font-semibold uppercase">
                     Blogs
                 </button>
-                <button>
+                <button class="text-white mx-6 text-2xl font-semibold uppercase">
                     Perks
                 </button>
-                <button>
+                <button class="text-white mx-6 text-2xl font-semibold uppercase">
                     NFT Staking
                 </button>
             </div>

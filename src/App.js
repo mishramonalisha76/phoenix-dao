@@ -18,6 +18,7 @@ function App() {
   const contract = GetContract('0x5FbDB2315678afecb367f032d93F642f64180aa3', [])
   const [imageUrl, setImageUrl] = useState('')
   const [fileUrl, setFileUrl] = useState('')
+  console.log(window.location.pathname)
  
   return (
     <>
@@ -28,7 +29,8 @@ function App() {
     */}
 
           {/* <ConnectButton /> */}
-         {/* {location.pathname === "/"  && <Navbar/>} */}
+         {window.location.pathname !== "/"  && <Navbar/>}
+         {/* <Navbar/> */}
           <Router>
               <Routes>
                   <Route path="/" element={<LaunchPage />} />
