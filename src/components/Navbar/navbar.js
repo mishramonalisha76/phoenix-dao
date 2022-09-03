@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -20,9 +21,9 @@ export default function Navbar() {
                 <button class="text-white mx-6 text-2xl font-semibold uppercase">
                     Blogs
                 </button>
-                <button class="text-white mx-6 text-2xl font-semibold uppercase">
+                <Link class="text-white mx-6 text-2xl font-semibold uppercase">
                     Perks
-                </button>
+                </Link>
                 <button class="text-white mx-6 text-2xl font-semibold uppercase">
                     NFT Staking
                 </button>

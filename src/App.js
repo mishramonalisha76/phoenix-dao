@@ -11,6 +11,7 @@ import { FileUpload } from 'react-ipfs-uploader'
 import LaunchPage from './components/LaunchPage/launchPage';
 import Navbar from './components/Navbar/navbar';
 import Dashboard from './components/Dashboard/dashboard';
+import Perks from './components/Perks/Perks';
 
 function App() {
   const account = GetAccount()
@@ -29,37 +30,18 @@ function App() {
     */}
 
           {/* <ConnectButton /> */}
-         {window.location.pathname !== "/"  && <Navbar/>}
+         {/* {window.location.pathname !== "/"  && <Navbar/>} */}
          {/* <Navbar/> */}
           <Router>
               <Routes>
                   <Route path="/" element={<LaunchPage />} />
                   <Route path="/dashboard" element={<Dashboard />} />
+                  <Route path="/Perks" element={<Perks />} />
+
               </Routes>
           </Router>
     {/* </div> */}
-    {/* <div>
-            <ImageUpload setUrl={setImageUrl} />
-            ImageUrl : <a
-                href={imageUrl}
-                target='_blank'
-                rel='noopener noreferrer'
-            >
-                {imageUrl}
-            </a>
-        </div>
-
-
-        <div>
-            <FileUpload setUrl={setFileUrl} />
-            FileUrl : <a
-                href={fileUrl}
-                target='_blank'
-                rel='noopener noreferrer'
-            >
-                {fileUrl}
-            </a>
-        </div> */}
+   
     </>
   )
 }
