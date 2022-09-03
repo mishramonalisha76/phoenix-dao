@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import GetAccount from "../../hooks/GetAccount";
 import Lights from "../../assets/img_lights.jpeg";
@@ -7,7 +7,6 @@ import logo from "../../assets/logo.webp";
 
 export default function LaunchPage() {
 
-  const account = GetAccount()
   return (
 
     <div class="flex">
@@ -21,7 +20,7 @@ export default function LaunchPage() {
           </span>
         </div>
         <div>
-          <h1 class="text-6xl font-extrabold">
+          <h1 class="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-emerald-400 to-white">
             PhoneixGuildDAO
           </h1>
           <p class="w-4/6 text-3xl mt-4 font-semibold">Earn the most valuable rewards for your holdings
