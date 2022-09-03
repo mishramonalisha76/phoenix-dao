@@ -106,7 +106,7 @@ export default function Perks() {
 
                         <div> Get Onboarded </div>
                         <div>
-
+                        <Uploader />
 
 
                         </div>
@@ -148,7 +148,7 @@ export default function Perks() {
                         </>
                     ))}
                 </div>
-                <Uploader />
+              
             </div>
         </>
     );
