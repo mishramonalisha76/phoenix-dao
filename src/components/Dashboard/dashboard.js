@@ -55,6 +55,7 @@ export default function Dashboard() {
             <h1 class="text-6xl font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-br from-emerald-400 to-white">
                 {`> Dashboard`}
             </h1>
+            <h4 class="my-4">Reputation Score: 3</h4>
             <div class="grid grid-cols-2 gap-16 mt-10">
                 {communityData.map(data => (
                     <>
@@ -62,6 +63,7 @@ export default function Dashboard() {
                             <h3 class="text-4xl font-semibold uppercase">
                                 {data[0].name}
                             </h3>
+                            
                             <p class="text-2xl font-semibold">
                                 {`No. of Memebers: ${data[0].membersno}`}
                             </p>
