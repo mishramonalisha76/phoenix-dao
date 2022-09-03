@@ -106,7 +106,7 @@ Collab with us
        
         <div> Get Onboarded </div>
         <div>
-
+        <Uploader />
        
      
         </div>
@@ -148,7 +148,7 @@ Collab with us
         </>
     ))}
 </div>
-<Uploader />
+
 </div>
     </>
   );
