@@ -53,7 +53,7 @@ s 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good a
     return (
         <div class="flex flex-col mx-24 my-14">
 
-            <h1 class="text-6xl font-extrabold uppercase">
+            <h1 class="text-6xl font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-br from-emerald-400 to-white">
                 {`> Blog`}
             </h1>
             <div class="my-14 mt-10 bg-green-500 p-10 max-h-screen overflow-y-auto">

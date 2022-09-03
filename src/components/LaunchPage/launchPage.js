@@ -3,6 +3,7 @@ import { ConnectButton } from '@rainbow-me/rainbowkit';
 import GetAccount from "../../hooks/GetAccount";
 import Lights from "../../assets/img_lights.jpeg";
 import logo from "../../assets/logo.webp";
+import community from "../../assets/community.png";
 
 
 export default function LaunchPage() {
@@ -28,7 +29,7 @@ export default function LaunchPage() {
         </div>
         <div>
           <div class="mt-10">
-            <ConnectButton label="Get Started" />
+            <ConnectButton label="Get Started !" />
           </div>
         </div>
       </div>

@@ -52,7 +52,7 @@ export default function Dashboard() {
     return (
         <div class="flex flex-col  mx-24 my-14">
 
-            <h1 class="text-6xl font-extrabold uppercase">
+            <h1 class="text-6xl font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-br from-emerald-400 to-white">
                 {`> Dashboard`}
             </h1>
             <div class="grid grid-cols-2 gap-16 mt-10">
