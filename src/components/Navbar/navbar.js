@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import logo from "../../assets/logo.webp";
 
 
 
@@ -12,7 +12,7 @@ export default function Navbar() {
 
             <div>
                 <span>
-                    LOGO
+                    <img src={logo} alt='logo' />
                 </span>
                 <span class="text-2xl font-semibold mx-6">
                     PhoenixGuildDao
@@ -22,10 +22,10 @@ export default function Navbar() {
                     <button class="text-white mx-6 text-2xl font-semibold uppercase" onClick={()=>navigate('/blog')}>
                         Blogs
                     </button>
-                    <button class="text-white mx-6 text-2xl font-semibold uppercase">
+                    <button class="text-white mx-6 text-2xl font-semibold uppercase" onClick={()=>navigate('/Perks')}>
                         Perks
                     </button>
-                    <button class="text-white mx-6 text-2xl font-semibold uppercase">
+                    <button class="text-white mx-6 text-2xl font-semibold uppercase" onClick={()=>navigate('/blog')}>
                         NFT Staking
                     </button>
             </div>

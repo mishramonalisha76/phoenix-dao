@@ -31,7 +31,7 @@ function App() {
     */}
 
           {/* <ConnectButton /> */}
-         {/* {window.location.pathname !== "/"  && <Navbar/>} */}
+         {window.location.pathname !== "/"  && <Navbar/>}
          {/* <Navbar/> */}
      
               <Routes>
