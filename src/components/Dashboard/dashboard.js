@@ -1,9 +1,13 @@
 import React, { useState } from "react";
-
+import { ImageUpload } from 'react-ipfs-uploader'
+import { FileUpload } from 'react-ipfs-uploader'
 
 
 
 export default function Dashboard() {
+     
+  const [imageUrl, setImageUrl] = useState('')
+  const [fileUrl, setFileUrl] = useState('')
 
     const communityData = [
         [{
@@ -46,7 +50,7 @@ export default function Dashboard() {
     ];
 
     return (
-        <div class="flex flex-col mx-24 my-14">
+        <div class="flex flex-col  mx-24 my-14">
 
             <h1 class="text-6xl font-extrabold uppercase">
                 {`> Dashboard`}
@@ -79,6 +83,28 @@ export default function Dashboard() {
                                 {`NFT  #${data[1].eventName}`}
                             </p>
                         </div>
+                        {/* <div>
+            <ImageUpload setUrl={setImageUrl} />
+            ImageUrl : <a
+                href={imageUrl}
+                target='_blank'
+                rel='noopener noreferrer'
+            >
+                {imageUrl}
+            </a>
+        </div>
+
+
+        <div>
+            <FileUpload setUrl={setFileUrl} />
+            FileUrl : <a
+                href={fileUrl}
+                target='_blank'
+                rel='noopener noreferrer'
+            >
+                {fileUrl}
+            </a>
+        </div> */}
                     </>
                 ))}
             </div>
