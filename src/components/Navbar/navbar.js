@@ -8,11 +8,11 @@ export default function Navbar() {
 
     const navigate = useNavigate();
     return (
-        <div class="flex justify-between m-6">
+        <div class="flex justify-between m-8">
 
-            <div>
+            <div class="flex flex-row">
                 <span>
-                    <img src={logo} alt='logo' />
+                    <img src={logo} alt='logo' class="w-16 h-16 -mt-2 rounded-full"/>
                 </span>
                 <span class="text-2xl font-semibold mx-6">
                     PhoenixGuildDao

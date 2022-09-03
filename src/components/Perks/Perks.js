@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar/navbar";
 import Modal from 'react-modal';
+import Uploader from "./Uploader";
 
 export default function Perks() {
     const customStyles = {
@@ -93,7 +94,7 @@ Collab with us
         contentLabel="Example Modal"
       > <div class="flex flex-row justify-between">
         <div>
-        <h2 ref={(_subtitle) => (subtitle = _subtitle)}> Collaborate with us </h2>
+        <h2 ref={(_subtitle) => (subtitle = _subtitle)}> Collaborate  </h2>
         </div>
         <div>
         <button onClick={closeModal}>close</button>
@@ -103,18 +104,11 @@ Collab with us
       
        
        
-        <div>I am a modal</div>
+        <div> Get Onboarded </div>
         <div>
 
        
      
-        <form class="form-vertical">
-          <input />
-          <button>tab navigation</button>
-          <button>stays</button>
-          <button>inside</button>
-          <button>the modal</button>
-        </form>
         </div>
       
         
@@ -148,10 +142,13 @@ Collab with us
                 <p class="text-1xl font-bold">
                     {`NFT  #${data[1].eventName}`}
                 </p>
+                
             </div>
+            
         </>
     ))}
 </div>
+<Uploader />
 </div>
     </>
   );

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import GetAccount from "../../hooks/GetAccount";
 import Lights from "../../assets/img_lights.jpeg";
+import logo from "../../assets/logo.webp";
 
 
 export default function LaunchPage() {
@@ -11,9 +12,9 @@ export default function LaunchPage() {
 
     <div class="flex">
       <div class="flex flex-col flex-initial w-3/5 m-8">
-        <div class="flex  mb-44">
+        <div class="flex flex-row  mb-44">
           <span>
-            LOGO
+            <img src={logo} alt='logo' class="w-16 h-16 mr-6 -mt-4 rounded-full" />
           </span>
           <span class="text-2xl font-semibold">
             PhoenixGuildDao

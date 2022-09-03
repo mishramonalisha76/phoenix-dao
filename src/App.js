@@ -14,6 +14,7 @@ import Dashboard from './components/Dashboard/dashboard';
 import Perks from './components/Perks/Perks';
 import Blog from './components/Blog/blog';
 
+
 function App() {
   const account = GetAccount()
 //   const location = useLocation();
