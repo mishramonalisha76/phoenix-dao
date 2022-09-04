@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.css';
 import { ethers } from "ethers";
-import {Biconomy} from "@biconomy/mexa";
+
 import gov from "./abi/gov";
 import nft from "./abi/nft";
 import GetAccount from './hooks/GetAccount';
