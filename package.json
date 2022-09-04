@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@biconomy/mexa": "^3.0.4",
     "@hashgraph/sdk": "^2.18.1",
     "@rainbow-me/rainbowkit": "^0.5.0",
     "@testing-library/jest-dom": "^5.16.5",
